@@ -1,17 +1,13 @@
 library(caret)
-df <- read.csv("/home/akshit/Documents/Downloads/gradenew.csv")
+df <- read.csv("path_to_gradefiltered.csv")
 png(file = "svm.png")
 plot(df, pch=16)
 dev.off()
+
 set.seed(3033)
 split <- createDataPartition(y = df$GRADE, p= 0.7, list = FALSE)
 train <- df[split,]
 test <- df[-split,]
-
-dim(train)
-dim(test)
-
-anyNA(df)
 
 train[["GRADE"]] = factor(train[["GRADE"]])
 test[["GRADE"]] = factor(test[["GRADE"]])
