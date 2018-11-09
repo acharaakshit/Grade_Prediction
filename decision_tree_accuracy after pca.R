@@ -6,7 +6,7 @@ library(ggplot2)  # data visualization
 library(caret)    # implementing with caret
 
 
-df <- read.csv("/home/akshit/Documents/Downloads/gradenew.csv")
+df <- read.csv("path_to_grade_filtered.csv")
 
 set.seed(123)
 split <- initial_split(df, prop = .7, strata = "GRADE")
