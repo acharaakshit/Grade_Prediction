@@ -24,3 +24,4 @@ The following methods were used to analyze and predict the final grades:
 Then a barplot is plotted to compare the training and generalization accuracies of all the methods.
 
 To install the required packages,run the script -> install.R
+If it doesn't work,then install the packages individually using -> install.packages("package_name")
