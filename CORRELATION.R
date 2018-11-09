@@ -1,4 +1,4 @@
-data <- read.csv("/home/akshit/Documents/Downloads/gradenew.csv")
+data <- read.csv("path_of_grade_filtered.csv")
 d <- data.frame(MIDSEM = data$MIDSEM,
                 MIDSEMGRADE = data$MIDSEMGRADE,
                 MIDSEMCOL = data$MIDSEMCOL,
