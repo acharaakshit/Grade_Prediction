@@ -1,0 +1,12 @@
+data <- read.csv("/home/akshit/Documents/Downloads/gradenew.csv")
+d <- data.frame(MIDSEM = data$MIDSEM,
+                MIDSEMGRADE = data$MIDSEMGRADE,
+                MIDSEMCOL = data$MIDSEMCOL,
+                QUIZ1 = data$QUIZ1,
+                QUIZ2=data$QUIZ2,
+                PART1=data$PART1,
+                PART2 = data$PART2,
+                GRADE = data$GRADE)
+cor(d) 
+
+
