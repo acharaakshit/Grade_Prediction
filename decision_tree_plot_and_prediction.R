@@ -1,5 +1,5 @@
 library(caret)
-df <- read.csv("/home/akshit/Documents/Downloads/gradenew.csv")
+df <- read.csv("path_to_the_file.R")
 
 library(caTools)
 
