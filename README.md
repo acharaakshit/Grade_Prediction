@@ -1,27 +1,40 @@
-# Academic_Data_Analysis_and_Prediction_using_R
+# Grade_Prediction
 
-This repository contains analysis and prediction of a student's final grade using different Machine Learning methodologies and  the data  contains the student's mid-semester performance along with some other  academic information.
-
-
-The data is in the csv file named grade1.csv. 
-The given data is taken for 205 students.
-It contains the following coloumns- IDNO, YEAR, ATTENDANCE %, CGPA, MidSemester, MidSemester Grades, MidSemester Collection, Quiz1, Quiz2, Part A, Part B and Grade.
-
-PREPROCESSING OF THE DATA:
-(i)All the coloumns with very less values will be removed.Like 'CGPA' has only 40 values.
-(ii)Using the correlation matrix,the coloumns which had very low correlation values will be removed.
-(iii)The final correlation matrix will calculated after removing irrelevant coloumns.
-(iv)A heat map will be plotted for better understanding of the correlation matrix.
+This repository contains analysis and prediction of a student's final grade using different Machine Learning methodologies and the data contains the student's mid-semester performance and other academic information.
 
 
+## Installation:
 
-The following methods were used to analyze and predict the final grades:
-1.Naive Bayes
-2.Decision Trees
-3.Neural Networks
-4.Linear SVM
+    - Install the "requiRements" package:
+        - install.packages("requiRements")
+    - Install all the other dependencies:
+        - Run install.R
 
-Then a barplot is plotted to compare the training and generalization accuracies of all the methods.
+## Details:
 
-To install the required packages,run the script -> install.R
-If it doesn't work,then install the packages individually using -> install.packages("package_name")
+### Data:
+The data is in the csv file named `grade1.csv`.
+The data is available for 205 students.
+It contains the following coloumns:  
+**IDNO, YEAR, ATTENDANCE %, CGPA, MidSemester, MidSemester Grades, MidSemester Collection, Quiz1, Quiz2, Part A, Part B and Grade**.
+
+## Data Processing:
+    - All the coloumns with very less values will be removed. Like 'CGPA' has only 40 values.
+    - Using the correlation matrix (`correlation.R`), the coloumns which had very low correlation values will be removed.
+    - The final correlation matrix is computed after removing irrelevant coloumns.
+    - A heat map (`heatmap.R`) can be generated for better understanding of the correlation matrix.
+
+### Methods:
+The following methods were used to analyze and predict the final grades:  
+1. **Naive Bayes**  
+    - Run `naive_bayes.R`
+2. **Decision Trees**  
+    - Run `decision_tree.R`
+    - PCA processed Run `decision_tree_pca.R`
+3. **Neural Networks**
+    - Run `neuralnet.R`
+4. **Linear SVM**  
+    - Run `svm.R`
+
+### Comparison
+Compare all methods by running `barplot.R`.
