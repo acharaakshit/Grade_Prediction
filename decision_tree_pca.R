@@ -6,7 +6,7 @@ library(ggplot2)  # data visualization
 library(caret)    # implementing with caret
 
 
-df <- read.csv("path_to_grade_filtered.csv")
+df <- read.csv("./grade_filtered.csv")
 
 set.seed(123)
 split <- initial_split(df, prop = .7, strata = "GRADE")
@@ -18,7 +18,7 @@ table(test$GRADE) %>% prop.table()
 
 train %>% 
   select(MIDSEMGRADE, MIDSEMCOL, QUIZ1, QUIZ2, PART1, PART2,MIDSEM) %>% 
-  gather(metric, value) %>% 
+  tidyr::gather(metric, value) %>% 
   ggplot(aes(value, fill = metric)) + 
   geom_density(show.legend = FALSE) + 
   facet_wrap(~ metric, scales = "free")

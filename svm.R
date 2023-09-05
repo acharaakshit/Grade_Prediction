@@ -1,5 +1,5 @@
 library(caret)
-df <- read.csv("path_to_gradefiltered.csv")
+df <- read.csv("./grade_filtered.csv")
 png(file = "svm.png")
 plot(df, pch=16)
 dev.off()

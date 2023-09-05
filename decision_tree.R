@@ -1,5 +1,5 @@
 library(caret)
-df <- read.csv("path_to_the_file.R")
+df <- read.csv("grade_filtered.csv")
 
 library(caTools)
 

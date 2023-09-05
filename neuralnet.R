@@ -1,7 +1,7 @@
 library(caret)
 library(neuralnet)
 
-df <- read.csv("path_to_grade_filtered.csv")
+df <- read.csv("./grade_filtered.csv")
 
 samplesize = 0.60 * nrow(df)
 set.seed(80)

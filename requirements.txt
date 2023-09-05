@@ -1,0 +1,14 @@
+Packrat
+caret
+ggplot2
+dplyr
+e1071
+psych
+devtools
+rsample
+neuralnet
+party
+rpart
+caTools
+factoextra
+kernlab
